@@ -1,0 +1,118 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to top, #504074, #bba6ee);
+  }
+  
+  .calculator {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  }
+  
+  .calculator > button {
+    cursor: pointer;
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.836);
+    border: none;
+    outline: none;
+    background-color: #271d41;
+  }
+  
+  .number:hover {
+    background: url(assets/images/hover.svg);
+    background-size: cover;
+  }
+  .empty {
+    background-color: #271d41;
+    color: rgba(255, 255, 255, 0.836);
+  }
+  
+  .division {
+    background: url(assets/images/division_.svg);
+    background-size: cover;
+  }
+  .multi {
+    background: url(assets/images/multi_.svg);
+    background-size: cover;
+  }
+
+  .substraction {
+    background: url(assets/images/substraction_.svg);
+    background-size: cover;
+  }
+
+  .addition {
+    background: url(assets/images/addition_.svg);
+    background-size: cover;
+  }
+
+  .equal {
+    background: url(assets/images/equal.svg);
+    background-size: cover;
+  }
+
+  .division:hover {
+    background: url(assets/images/division.svg);
+    background-size: cover;
+  }
+  .multi:hover {
+    background: url(assets/images/multi.svg);
+    background-size: cover;
+  }
+
+  .substraction:hover {
+    background: url(assets/images/substraction.svg);
+    background-size: cover;
+  }
+
+  .addition:hover {
+    background: url(assets/images/addition.svg);
+    background-size: cover;
+  }
+
+  .equal:hover {
+    background: url(assets/images/equal_.svg);
+    background-size: cover;
+  }
+  .sqrt {
+    background: url(assets/images/sqrt.svg);
+    background-size: cover;
+  }
+  .sqrt:hover {
+    background: url(assets/images/sqrt_.svg);
+    background-size: cover;
+  }
+
+  .input-output {
+    grid-column: 1 / -1;
+    background-color: #271d41;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  
+  .input-output .previous {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.2rem;
+    margin-right: 5px;
+  }
+  
+  .input-output .current {
+    color: white;
+    font-size: 2.1rem;
+    margin-right: 5px;
+  }
