@@ -1,0 +1,180 @@
+en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+
+    <div class="Header-container">
+        <div class="Header">
+            <div class="logo">
+                <h1 onclick="ToMain()">Cozy House</h1>
+                <p onclick="ToMain()">Shelter for pets in Boston</p>
+            </div>
+            <nav class="navbar">
+                <a href="../main/main.html">About the shelter</a>
+                <a href="pets.html" class="active1" autofocus>Our pets</a>
+                <a href="#" style="pointer-events: none;">Help the shelter</a>
+                <a href="#" style="pointer-events: none;">Contacts</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="Pets">
+        <div class="Pets-content">
+            <h1 class="text1">Our friends who <br />are looking for a house</h1>
+            <div class="cards1">
+                <div class="Katrine" id="elem-1">
+                    <img src="../../assets/images/katrine.png">
+                    <span>Katrine</span>
+                    <a class="learn-btn" id="a-1">Learn more</a>
+                </div>
+                <div class="Jennifer" id="elem-2">
+                    <img src="../../assets/images/Jennifer.png">
+                    <span>Jennifer</span>
+                    <a class="learn-btn" id="a-2">Learn more</a>
+                </div>
+                <div class="Woody" id="elem-3">
+                     <img src="../../assets/images/woody.png">
+                    <span>Woody</span>
+                    <a class="learn-btn" id="a-3">Learn more</a>
+                </div>
+                <div class="Sophia" id="elem-4"> 
+                    <img src="../../assets/images/Sophia.png">
+                    <span>Sophia</span>
+                    <a class="learn-btn" id="a-4">Learn more</a>
+                </div>
+            </div>
+            <div class="cards2">
+                <div class="Timmy" id="elem-5">
+                     <img src="../../assets/images/Timmy.png">
+                    <span>Timmy</span>
+                    <a class="learn-btn" id="a-5">Learn more</a>
+                </div>
+                <div class="Charly" id="elem-6"> 
+                    <img src="../../assets/images/Charly.png">
+                    <span>Charly</span>
+                    <a class="learn-btn" id="a-6">Learn more</a>
+                </div>
+                <div class="Scarlett" id="elem-7">
+                    <img src="../../assets/images/Scarlett.png">
+                    <span>Scarlett</span>
+                    <a class="learn-btn" id="a-7">Learn more</a>
+                </div>
+                <div class="Freddie" id="elem-8">
+                    <img src="../../assets/images/Freddie.png">
+                    <span>Freddie</span>
+                    <a class="learn-btn" id="a-8">Learn more</a>
+                </div>
+            </div>
+
+            <div class="Pagination">
+                <button class="pag-btn1" >
+                    <a >&lt;&lt;</a>
+                </button>
+                <button class="pag-btn2" >
+                    <a >&lt;</a>
+                </button>
+                <button class="pag-btn3">
+                    <a >1</a>
+                </button>
+                <button class="pag-btn4">
+                    <a >&gt;</a>
+                </button>
+                <button class="pag-btn5">
+                    <a >&gt;&gt;</a>
+                </button>
+            </div>
+
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+                <ul class="menu__box">
+                    <div class="logo-burger">
+                        <h1 onclick="ToMain()">Cozy House</h1>
+                        <p onclick="ToMain()">Shelter for pets in Boston</p>
+                    </div>
+                    <div class="menu">
+                        <li><a class="menu__item" href="../main/main.html">About the shelter</a></li>
+                        <li><a class="menu__item" href="pets.html">Our pets</a></li>
+                        <li><a class="menu__item" href="#">Help the shelter</a></li>
+                        <li><a class="menu__item" href="#">Contacts</a></li>
+                    </div>
+                </ul>
+              </div>
+        </div>
+
+        <div class="popup">
+            <div class="popup-content" onmouseout="HoverCloseBtn()" onmouseover="CancelHover()">
+                <img class="pet-image" src="../../assets/images/jennifer.png">
+                <h3 class="pet-name">Jennifer</h3>
+                <p class="type-breed">Dog - Labrador</p>
+                <p class="description">Jennifer is a sweet 2 months old Labrador that is patiently 
+                    waiting to find a new forever home. This girl really enjoys being able to go 
+                    outside to run and play, but won't hesitate to play up a storm in the house if she 
+                    has all of her favorite toys.</p>
+                <ul>
+                    <li>
+                        <span>Age: </span>
+                        <span id="popup-age">2 months</span>
+                    </li>
+                    <li>
+                        <span>Inoculations: </span>
+                        <span id="popup-inoculations">none</span>
+                    </li>
+                    <li>
+                        <span>Diseases: </span>
+                        <span id="popup-diseases">none</span>
+                    </li>
+                    <li>
+                        <span>Parasites: </span>
+                        <span id="popup-parasites">none</span>
+                    </li>
+                </ul>
+            </div>
+            <button class="close-btn"></button>
+        </div>
+    </div>
+
+        <div class="Footer">
+            <div class="Footer-content">
+                <a name="contacts"></a>
+                <h1>For questions and suggestions</h1>
+                <h2>We are waiting for your visit</h2>
+
+                <a class="email" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">email@shelter.com
+                    <img src="../../assets/images/icon-email.svg"
+                        style="position: relative;top: -28px;left: -60px;">
+                </a>
+
+                <a class="address1"
+                    href="https://www.google.com/maps/place/67-79+Central+St,+Boston,+MA+02109,+%D0%A1%D0%A8%D0%90/@42.358856,-71.0536605,19z/data=!3m1!4b1!4m13!1m7!3m6!1s0x89e370865345ba21:0x44f6c81aa9436fb7!2zQ2VudHJhbCBTdCwgQm9zdG9uLCBNQSwg0KHQqNCQ!3b1!8m2!3d42.3588393!4d-71.0529417!3m4!1s0x89e3708656a9e6b9:0x1bf000761064d3c5!8m2!3d42.3588487!4d-71.0531142">
+                    1 Central Street, Boston (entrance from the store)
+                    <img src="../../assets/images/icon-marker.svg"
+                        style="position: relative;top: -39px;left: -42px;">
+                </a>
+
+                <a class="contacts" href="tel:+136745677554">+13 674 567 75 54
+                    <img src="../../assets/images/icon-phone.svg"
+                        style="position: relative;top: -28px;left: -60px;">
+                </a>
+
+                <a class="address2"
+                    href="https://www.google.com/maps/place/WCB+Capital/@51.5073026,-0.1287074,18z/data=!3m1!4b1!4m8!1m2!2m1!1s18+South+Park,+London!3m4!1s0x487604ce4a0ca8e5:0xb70d6a561ebbef8!8m2!3d51.5073026!4d-0.1276745">
+                    18 South Park, London
+                    <img src="../../assets/images/icon-marker.svg"
+                        style="position: relative;top: 9px;left: -276px;">
+                </a>
+
+                <img src="../../assets/images/footer-puppy.png" class="dog-img">
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
