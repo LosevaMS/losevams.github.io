@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="calculator">
+        <div class="input-output">
+            <div class="previous" ></div>
+            <div class="current"> </div>
+        </div>
+        <button class="number" onclick="deleting()">C</button>
+        <button class="number" onclick="deleteOne()">&larr;</i></button>
+        <button class="number" onclick="insert('^')">^</button>
+        <button class="division" onclick="insert('÷')"></button>
+        <button class="number" onclick="insert(7)">7</button>
+        <button class="number" onclick="insert(8)">8</button>
+        <button class="number" onclick="insert(9)">9</button>
+        <button class="multi" onclick="insert('*')"></button>
+        <button class="number" onclick="insert(4)">4</button>
+        <button class="number" onclick="insert(5)">5</button>
+        <button class="number" onclick="insert(6)">6</button>
+        <button class="substraction" onclick="insert('-')"></button>
+        <button class="number" onclick="insert(1)">1</button>
+        <button class="number" onclick="insert(2)">2</button>
+        <button class="number" onclick="insert(3)">3</button>
+        <button class="addition" onclick="insert('+')"></button>
+        <button class="number" onclick="insert('.')">.</button>
+        <button class="number" onclick="insert(0)">0</button>
+        <button class="equal" onclick="result()"></button>
+        <button class="sqrt" onclick="insert('√')"></button>
+    </div>
+</body>
+</html>
